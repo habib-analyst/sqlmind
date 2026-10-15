@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlmind"
+version = "0.1.0"
+description = "SQL-native agent memory with bounded differential consolidation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Habib Ur Rehman" }]
+keywords = ["ai-agents", "memory", "sqlite", "sql", "llm-agents"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/habib-analyst/sqlmind"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sqlmind*"]
